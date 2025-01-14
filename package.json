@@ -1,0 +1,26 @@
+{
+  "name": "crudapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc -w",
+    "start": "npx nodemon ./dist/index.js",
+    "prestart": "npm run build",
+    "dev": "concurrently \"npm run watch\" \"npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "@types/express": "^5.0.0",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.3"
+  }
+}
